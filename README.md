@@ -1,5 +1,10 @@
+
+
+
 # 僵尸.js  --version 3.2.1
-地址:chatjs.top 已经备案.....
+
+--- 
+[地址](http://chatjs.top)
 ## 用来做什么？
 僵尸.js能为用户可便捷
 管理自己零碎的js脚本的服务,比如你临时
@@ -42,7 +47,7 @@
 数据的展示使用的是web,使用快速容易上手的vue.js,socket.io.js做即使消息通信,后台使用nginx做反向代理，redis保存用户状态，以及消息缓存历史。mongodb保存用户基本信息，mysql保存用户代码内容。
 ## 后台管理系统的使用
 为了管理员的操作与管理，向着界面简洁，功能齐全开发.基本包括了对mysql的增删改查，分页.
-###具体使用到的sql和功能.
+### 具体使用到的sql和功能.
 
 ```        const redis_c = redis.createClient(6379, '127.0.0.1');
             redis_c.get(cookie.parse(req.headers.cookie).check, (erro, data) => {
