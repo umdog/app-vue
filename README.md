@@ -16,6 +16,7 @@
 4 案例，nodejs爬虫代挂
 ## 如何提交代码?
 在任意得窗口，发送<dj，提交代码，[触发词]，[脚本内容]，[帮助信息]>. ，这是我们为你提供的全局环境
+```
 	Promise: Promise,
 	setInterval: setInterval,
 	setTimeout: setTimeout,
@@ -26,18 +27,20 @@
 	jQuery: jQuery,
 	request: request,
 	response: 'running...' //返回字段，你要返回的值
-
+```
 ## 如何添加好友?
 同样的和前缀用dj用户<dj，添加，[好友名字]>，你的好友同意可以使用<dj，同意，[你的名字]>.
 ## 如何触发我的脚本?
 发送<dj，触发词，[参数1]，[参数2]，[参数3]>首先你的脚本中有对这些参数处理.
 ## 如何添加库?
-我们目前不打算添加其他库，这是为了安全起见，更多的库意味着收到恶意代码攻击的几率增加.以后可能会增加支持.
-#关于后台数据库
-###小组成员：鲁志春（前端界面展示 | 服务器连接数据库 | 部署服务器应用） 王冠伟(测试应用) | 苏磊(编写文档) | 杨文龙（mysql SQL语句编写数据库设计）
-##使用到的技术栈 ----
+我们目前不打算添加其他库，这是为了安全起见，更多的库意味着收到恶意代码攻击的几率增加.以后可能会增加支持
+
+# 关于后台数据库
+
+### 小组成员：鲁志春（前端界面展示 | 服务器连接数据库 | 部署服务器应用） 王冠伟(测试应用) | 苏磊(编写文档) | 杨文龙（mysql SQL语句编写数据库设计）
+## 使用到的技术栈 ----
 数据的展示使用的是web,使用快速容易上手的vue.js,socket.io.js做即使消息通信,后台使用nginx做反向代理，redis保存用户状态，以及消息缓存历史。mongodb保存用户基本信息，mysql保存用户代码内容。
-##后台管理系统的使用
+## 后台管理系统的使用
 为了管理员的操作与管理，向着界面简洁，功能齐全开发.基本包括了对mysql的增删改查，分页.
 ###具体使用到的sql和功能.
 
@@ -48,6 +51,8 @@
                     res.statusCode = 404
                     res.end()
                 } else {
+
+
                     const db = mysql.createConnection({
                         host: '39.108.216.184',
                         user: 'chunge',
@@ -100,8 +105,6 @@
                             console.log(db.format('update chat_js_user_script set ' + db_map[inf.key_] + '=? where _id=?', [swi_.data, id]))
                         })
                     }
-
-
                     if (inf.method == 'select') {
                         db_query('select * from chat_js_user_script where script_content like ?', ["%" + inf.keyword + "%"], (rows) => {
                             res.end(JSON.stringify(rows))
