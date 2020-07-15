@@ -103,6 +103,7 @@
         },
         mounted() {
             setInterval(() => {
+                console.log("clock life!")
                 if (this.$store.state.is_login) {
                     this.$store.state.user_inf.friends.forEach(
                         (v,k)=>{
@@ -120,7 +121,7 @@
                     )
 
                 }
-            }, 4000)
+            }, 3000)
         },
         methods: {
             send() {

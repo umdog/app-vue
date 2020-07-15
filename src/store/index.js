@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     is_login : false,
     show_insert : false,
-    host: 'http://39.108.216.184',
+    host: '',
     user_inf : {},
     with_chat : 'community',
     with_chat_index:0,

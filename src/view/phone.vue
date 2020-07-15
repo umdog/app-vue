@@ -36,7 +36,7 @@
     </div>
   </div>
 </div>
-<div style="color:#000;width:800px;height:40px;margin:0 auto;line-height:10px;text-align:left;color:#777;margin-top:40px;border-bottom:#999 solid 2px;">
+<div style="color:#000;width:800px;height:40px;margin:0 auto;line-height:10px;text-align:left;margin-top:40px;border-bottom:#999 solid 2px;">
 <h2>相关问题</h2>
 </div>
 <div style="width:800px;height:600px;margin:0 auto;">
@@ -77,11 +77,12 @@
 <span style="text-align:center;display:block;border-top:1px #777 solid ;width:100%;height: 200px;font-size: 15px;color: #999;margin:0 auto;margin-top:80px;">
       <br>
       <br>
-      来源：没有拉姆工作室
+      来源：没有拉姆工作室      
+      <br>
       github:amdog/umdog | emil:aswatercoo@sina.com
       <br>
-      地址：云南楚雄师范学院18数字媒体技术班 
-      vuejs | node | uni-app     
+      Copyright © <a href="http://www.beian.miit.gov.cn/" style="color:#999;">滇ICP备20005951号</a>
+      <br>  
        版本号 ： 2.4.4 
     </span>
 </div>
